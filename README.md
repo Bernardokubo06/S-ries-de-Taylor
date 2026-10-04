@@ -247,23 +247,3 @@ N_LIMITE = 28  (vale para |x| <= 3)
 ```
 
 A saída completa de uma execução está em [`resultados/saida.txt`](resultados/saida.txt).
-
-## 6. Estrutura do repositório
-
-```
-.
-├── README.md                  este relatório
-├── serie_taylor.py            código fonte (derivadas, N limite, otimizada, tabela, gráficos)
-├── requirements.txt           dependências (matplotlib, numpy)
-└── resultados/
-    ├── saida.txt              saída do terminal
-    ├── tabela_valores.csv     tabela de valores fixos
-    ├── serie_taylor.png       função exata × aproximações
-    ├── grafico_erros.png      erro × número de termos
-    ├── grafico_tempo.png      tempo × número de termos
-    └── grafico_erro_vs_tempo.png   erro × tempo de execução
-```
-
-## 7. Conclusão
-
-A série de Taylor de `x·eˣ` é simples de obter à mão (`f⁽ⁿ⁾(x) = (x+n)·eˣ`, coeficientes `1/(n−1)!`) e converge para qualquer `x`. Na prática, o número de termos necessário cresce com `|x|` e, a partir de `N = 28` (para `|x| ≤ 3`), não há mais ganho de precisão com `float`. Calcular cada termo a partir do anterior reduz o tempo em relação à versão com fatorial e potência, mas a função `exp` da biblioteca continua sendo a melhor opção quando só o valor da função interessa; a série é útil para entender e controlar a aproximação (erro, número de termos, custo).
