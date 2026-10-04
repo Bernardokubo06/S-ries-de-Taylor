@@ -3,15 +3,15 @@ Entrega 1: Série de Taylor. Função: y = x * e^x
 
 Itens:
   1. Cálculo de Taylor
-       - derivadas feitas à mão            -> derivada(), mostrar_derivadas()
-       - valor limite de N e por quê       -> descobrir_n_limite(), mostrar_n_limite()
-       - função otimizada                  -> taylor_otimizada()
-       - série (exponencial * x)           -> exp_taylor() * x = taylor()
-  2. Aproximações e propriedades           -> propriedades()
-  3. Tabela de valores fixos               -> tabela_valores()  (+ tabela_valores.csv)
-  4. Erros da função x tempo de execução   -> grafico_erros()      (grafico_erros.png)
-                                              grafico_tempo()      (grafico_tempo.png)
-                                              grafico_erro_vs_tempo() (grafico_erro_vs_tempo.png)
+       - derivadas feitas à mão            
+       - valor limite de N e por quê      
+       - função otimizada               
+       - série (exponencial * x)           
+  2. Aproximações e propriedades           
+  3. Tabela de valores fixos              
+  4. Erros da função x tempo de execução  
+                                             
+                                          
 """
 
 import csv
@@ -24,15 +24,12 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-# Todos os arquivos gerados (gráficos e CSV) são salvos nesta pasta
+# Todos os arquivos estão salvos nessa pasta.
 PASTA = "resultados"
 os.makedirs(PASTA, exist_ok=True)
 
 # ---------------------------------------------------------------------------
-# 1) Série de Taylor (Maclaurin, a = 0) de y = x * e^x
-#
-#    e^x     = soma_{n>=0} x^n / n!
-#    x * e^x = x * (série de e^x) = x + x^2 + x^3/2! + x^4/3! + ...
+# 1) Série de Taylor de y = x * e^x
 # ---------------------------------------------------------------------------
 def f(x):
     """Função: y = x * e^x"""
