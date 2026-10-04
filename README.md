@@ -3,7 +3,7 @@
 
 ### Integrantes do grupo: Bernardo Pereira Kubo
 
-## Instalação, execução e exemplos
+# Instalação, execução e exemplos
 
 **Instalação** (Python 3.8+):
 
