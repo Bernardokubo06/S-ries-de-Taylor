@@ -6,7 +6,7 @@
 
 - Bernardo Pereira Kubo
 
-Todo o código está em um único arquivo, [`serie_taylor_completo.py`](serie_taylor_completo.py), em Python (biblioteca padrão para os cálculos e `matplotlib`/`numpy` apenas para os gráficos). **Nenhuma biblioteca simbólica (Sympy) foi usada**: as derivadas foram deduzidas à mão.
+Todo o código está em um único arquivo, [`serie_taylor.py`](serie_taylor.py), em Python (biblioteca padrão para os cálculos e `matplotlib`/`numpy` apenas para os gráficos). **Nenhuma biblioteca simbólica (Sympy) foi usada**: as derivadas foram deduzidas à mão.
 
 ---
 
