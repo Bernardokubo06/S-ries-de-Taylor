@@ -4,13 +4,8 @@
 
 **Integrantes do grupo:**
 
-- [Nome completo do integrante 1]
-- [Nome completo do integrante 2]
-- [Nome completo do integrante 3]
-
+- Bernardo Pereira Kubo
   
-**Disciplina / Professor:** [preencher]
-
 Todo o código está em um único arquivo, [`serie_taylor.py`](serie_taylor.py), em Python (biblioteca padrão para os cálculos e `matplotlib`/`numpy` apenas para os gráficos). **Nenhuma biblioteca simbólica (Sympy) foi usada**: as derivadas foram deduzidas à mão.
 
 ---
