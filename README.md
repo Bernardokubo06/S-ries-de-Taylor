@@ -190,13 +190,12 @@ No Windows, se o comando `pip` não for reconhecido: `py -m pip install -r requi
 ### 5.2 Como rodar
 
 ```bash
-python serie_taylor_completo.py
+python serie_taylor.py
 ```
 
-No Windows, se `python` não for reconhecido: `py serie_taylor_completo.py`.
+No Windows, se `python` não for reconhecido: `py serie_taylor.py`.
 
-O programa **não pede nenhum dado de entrada**. Ele imprime no terminal as derivadas, o limite N, as propriedades, a tabela e os tempos, e salva os gráficos e o CSV na pasta `resultados/`. No final há uma pausa (`Pressione Enter para sair...`) para o terminal não fechar sozinho.
-
+O programa **não pede nenhum dado de entrada**. Ele imprime no terminal as derivadas, o limite N, as propriedades, a tabela e os tempos, e salva os gráficos e o CSV na pasta `resultados/`.
 ### 5.3 Exemplos de entrada e saída
 
 **a) Usando as funções diretamente no Python**
@@ -204,7 +203,7 @@ O programa **não pede nenhum dado de entrada**. Ele imprime no terminal as deri
 Entrada:
 
 ```python
-from serie_taylor_completo import f, taylor, taylor_otimizada, derivada, N_LIMITE
+from serie_taylor import f, taylor, taylor_otimizada, derivada, N_LIMITE
 
 print(f(1.0))                # valor exato de x·eˣ em x = 1
 print(taylor(1.0, 10))       # Taylor com 10 termos em x = 1
@@ -227,7 +226,7 @@ Saída:
 
 **b) Rodando o programa completo**
 
-Entrada: nenhuma (apenas Enter no final). Trecho da saída:
+Entrada: nenhuma. Trecho da saída:
 
 ```
 ================================================================
@@ -254,7 +253,7 @@ A saída completa de uma execução está em [`resultados/saida.txt`](resultados
 ```
 .
 ├── README.md                  este relatório
-├── serie_taylor_completo.py   código fonte (derivadas, N limite, otimizada, tabela, gráficos)
+├── serie_taylor.py            código fonte (derivadas, N limite, otimizada, tabela, gráficos)
 ├── requirements.txt           dependências (matplotlib, numpy)
 └── resultados/
     ├── saida.txt              saída do terminal
